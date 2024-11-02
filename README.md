@@ -34,6 +34,7 @@ go install go.k6.io/xk6/cmd/xk6@latest
 xk6 build latest \
   --with github.com/grafana/xk6-sql \
   --with github.com/grafana/xk6-output-timescaledb
+```
 
 You will now have a new `k6` binary in your current directory with the extensions compiled in.
 
