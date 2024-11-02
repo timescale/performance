@@ -36,7 +36,8 @@ All settings and SQL setup is encapsulated in the `skipscan.js` file.
 To execute the benchmark, use the following command (make sure you're running k6 with the `xk6-sql` extension compiled in):
 
 ```bash
-k6 run skipscan.js
+export CONNECTION_STRING="postgres://database_to_test"
+k6 run setup.js
 ```
 
 This command will begin the test, simulating both data ingest and query load based on the settings detailed below.
