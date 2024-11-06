@@ -11,7 +11,7 @@ Each article's directory contains:
 
 ## Published Articles
 
-1. [Postgres DISTINCT: TimescaleDB's Skip Scan Under Load](http://), [Github README](https://github.com/timescale/performance/blob/main/articles/skipscan/README.md)
+1. [Postgres DISTINCT: TimescaleDB's Skip Scan Under Load](http://), ([Github README](https://github.com/timescale/performance/blob/main/articles/skipscan/README.md))
 
 ## Performance Testing with Grafana k6
 
@@ -28,6 +28,7 @@ If you have Go installed, you can compile and install `k6` with these extensions
 go install go.k6.io/xk6/cmd/xk6@latest
 xk6 build latest \
   --with github.com/grafana/xk6-sql \
+  --with github.com/grafana/xk6-sql-driver-postgres
   --with github.com/grafana/xk6-output-timescaledb
 ```
 
