@@ -1,10 +1,11 @@
 import sql from 'k6/x/sql';
+import driver from "k6/x/sql/driver/postgres";
 import {
     uuidv4
 } from 'https://jslib.k6.io/k6-utils/1.4.0/index.js';
 
 // Select the correct DB connection string based on the environment variable
-const db = sql.open('postgres', __ENV.CONNECTION_STRING);
+const db = sql.open(driver, __ENV.CONNECTION_STRING);
 const runId = __ENV.RUN_ID;
 const runDuration = '20m';
 
