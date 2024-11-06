@@ -11,12 +11,7 @@ Each article's directory contains:
 
 ## Published Articles
 
-## Coming Soon
-1. Postgres DISTINCT: TimescaleDB's Skip Scan Under Load
-2. Optimizing INSERT: Comparing Different INSERT Methods
-3. Neon vs. Time-Series Data
-4. Time-Series Ingestion Across Postgres DBaaS Providers
-5. Wide Table vs. Narrow Table Showdown
+1. [Postgres DISTINCT: TimescaleDB's Skip Scan Under Load](http://)
 
 ## Performance Testing with Grafana k6
 
