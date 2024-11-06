@@ -1,6 +1,6 @@
-# TimescaleDB Skip Scan Benchmark
+# TimescaleDB SkipScan Benchmark
 
-This directory contains resources for running a benchmark on TimescaleDB's **Skip Scan** feature. This benchmark tests the performance benefits of Skip Scan for `SELECT DISTINCT` queries, particularly when working with large tables under high-ingest workloads.
+This directory contains resources for running a benchmark on TimescaleDB's **Skip Scan** feature. This benchmark tests the performance benefits of Skip Scan for `SELECT DISTINCT` queries, simulating ingest at the same time as query.
 
 For a deeper dive into the importance of Skip Scan and the benchmark results, please refer to the blog post: [Postgres DISTINCT: TimescaleDB’s Skip Scan Under Load](BLOG_LINK_HERE).
 
