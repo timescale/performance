@@ -11,7 +11,7 @@ Each article's directory contains:
 
 ## Published Articles
 
-1. [Postgres DISTINCT: TimescaleDB's Skip Scan Under Load](http://)
+1. [Postgres DISTINCT: TimescaleDB's Skip Scan Under Load](http://), [Github README](https://github.com/timescale/performance/blob/main/articles/skipscan/README.md)
 
 ## Performance Testing with Grafana k6
 
