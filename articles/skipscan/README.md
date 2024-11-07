@@ -2,7 +2,7 @@
 
 This directory contains resources for running a benchmark on TimescaleDB's **Skip Scan** feature. This benchmark tests the performance benefits of Skip Scan for `SELECT DISTINCT` queries, simulating ingest at the same time as query.
 
-For a deeper dive into the importance of Skip Scan and the benchmark results, please refer to the blog post: [Postgres DISTINCT: TimescaleDB’s Skip Scan Under Load](BLOG_LINK_HERE).
+For a deeper dive into the importance of Skip Scan and the benchmark results, please refer to the blog post: [Postgres DISTINCT: TimescaleDB’s Skip Scan Under Load (https://github.com/timescale/performance/).
 
 ## Prerequisites
 
@@ -45,7 +45,7 @@ This command will begin the test, simulating both data ingest and query load bas
 ## Benchmark results
 
 k6 will output general statistics that unfortunately combine the ingest and query stats (although you can look at the interations per second per scenario to see performance degrade). 
-You can see a summary of our findings in the blog above, or you can run k6 with the `-o timescaledb:postgres://your_postgres_url` to send raw data to a TimescaleDB instance.
+You can see a summary of our findings in the [blog](https://github.com/timescale/performance/) or the [PopSQL dashboard](https://popsql.com/dashboards/m0gFmBpI/timescaleperformance-skipscan?access_token=5f93d6bfebd67b483dfb0305b89ed8dd), or you can run k6 with the `-o timescaledb:postgres://your_postgres_url` to send raw data to a TimescaleDB instance.
 
 If you'd perfer to just see the data from our run presented on a dashboard you can checkout our [interactive PopSQL dashboard.](https://popsql.com/dashboards/m0gFmBpI/timescaleperformance-skipscan?access_token=5f93d6bfebd67b483dfb0305b89ed8dd)
 
