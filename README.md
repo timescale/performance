@@ -28,7 +28,7 @@ If you have Go installed, you can compile and install `k6` with these extensions
 go install go.k6.io/xk6/cmd/xk6@latest
 xk6 build latest \
   --with github.com/grafana/xk6-sql \
-  --with github.com/grafana/xk6-sql-driver-postgres
+  --with github.com/grafana/xk6-sql-driver-postgres \
   --with github.com/grafana/xk6-output-timescaledb
 ```
 
