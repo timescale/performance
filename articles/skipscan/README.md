@@ -44,7 +44,7 @@ This command will begin the test, simulating both data ingest and query load bas
 
 ## Benchmark results
 
-k6 will output general statistics that unfortunatley combine the ingest and query stats. You can see a summary of our findings in the blog above, or you can run k6 with the `-o timescaledb:postgres://your_postgres_url` to send raw data to a TimescaleDB instance.
+k6 will output general statistics that unfortunately combine the ingest and query stats. You can see a summary of our findings in the blog above, or you can run k6 with the `-o timescaledb:postgres://your_postgres_url` to send raw data to a TimescaleDB instance.
 
 If you'd perfer to just see the data from our run presented on a dashboard you can checkout our interactive PopSQL dashboard.
 
