@@ -12,7 +12,7 @@ To run this benchmark, you’ll need `k6` with the necessary extensions. Follow 
 
 The benchmark is inteded to compare the performance of two identical Postgres instances, one with with TimescaleDB SkipScan enabled and one with standard Postgres behavior (the TimescaleDB extension is loaded in both cases). The query focuses on retrieving the latest reading for each unique sensor from a table simulating high-ingest sensor data.
 
-The companion blog used two Timescale Cloud instance with 4CPU and 16GB memory. 
+The companion blog used two Timescale Cloud instance with 4CPU and 16GB memory.
 
 ### What This Benchmark Runs
 k6 is used to run the following in parallel:
@@ -28,7 +28,7 @@ All settings and SQL setup is encapsulated in the `skipscan.js` file.
 |-----------------------------|--------------------------|--------------------------------------------------|
 | **Ingest Rate**             | 200,000 rows/second      | Simulated rate of incoming sensor data           |
 | **Query Rate**              | 10 queries/second        | `SELECT DISTINCT` queries to retrieve latest data|
-| **Test Duration**           | 2 minutes                | Total runtime for the test                       |
+| **Test Duration**           | 20 minutes               | Total runtime for the test                       |
 
 
 ## Running the Benchmark
