@@ -1,4 +1,4 @@
-# TimescaleDB SkipScan Benchmark
+# TimescaleDB SkipScan benchmark
 
 This directory contains resources for running a benchmark on TimescaleDB's **Skip Scan** feature. This benchmark tests the performance benefits of Skip Scan for `SELECT DISTINCT` queries, simulating ingest at the same time as query.
 
@@ -20,7 +20,7 @@ k6 is used to run the following in parallel:
 - **Data Ingest Rate**: Simulates a continuous stream of sensor data at a high rate (200K rows per second).
 - **Query Load**: Executes repeated `SELECT DISTINCT ON (sensor_id)` queries to mimic real-time dashboard needs.
 
-### Benchmark Settings
+### Benchmark settings
 
 All settings and SQL setup is encapsulated in the `skipscan.js` file. 
 
@@ -31,7 +31,7 @@ All settings and SQL setup is encapsulated in the `skipscan.js` file.
 | **Test Duration**           | 20 minutes               | Total runtime for the test                       |
 
 
-## Running the Benchmark
+## Running the benchmark
 
 To execute the benchmark, use the following command (make sure you're running k6 with the `xk6-sql` extension compiled in):
 
@@ -44,7 +44,7 @@ This command will begin the test, simulating both data ingest and query load bas
 
 ## Benchmark results
 
-k6 will output general statistics that unfortunately combine the ingest and query stats (although you can look at the interations per second). 
+k6 will output general statistics that unfortunately combine the ingest and query stats (although you can look at the interations per second per scenario to see performance degrade). 
 You can see a summary of our findings in the blog above, or you can run k6 with the `-o timescaledb:postgres://your_postgres_url` to send raw data to a TimescaleDB instance.
 
 If you'd perfer to just see the data from our run presented on a dashboard you can checkout our [interactive PopSQL dashboard.](https://popsql.com/dashboards/m0gFmBpI/timescaleperformance-skipscan?access_token=5f93d6bfebd67b483dfb0305b89ed8dd)
