@@ -1,5 +1,6 @@
 import sql from 'k6/x/sql';
 import driver from "k6/x/sql/driver/postgres";
+import faker from 'https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js';
 import {
     uuidv4
 } from 'https://jslib.k6.io/k6-utils/1.4.0/index.js';
@@ -64,7 +65,7 @@ export function ingest() {
 }
 
 export function skipscan() {
-    let results = sql.query(db, "SELECT distinct ON (sensorid) * FROM sensors ORDER BY sensorid, ts DESC");
+    let results = db.query("SELECT distinct ON (sensorid) * FROM sensors ORDER BY sensorid, ts DESC");
 }
 
 
