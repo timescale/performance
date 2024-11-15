@@ -10,7 +10,27 @@ To run this benchmark, you’ll need `pgbench` and a PostgreSQL database with th
 
 ## Benchmark Overview
 
-The benchmark is inteded to compare the performance of two identical Postgres instances, one with with TimescaleDB SkipScan enabled and one with standard Postgres behavior (the TimescaleDB extension is loaded in both cases). The query focuses on retrieving the latest reading for each unique sensor from a table simulating high-ingest sensor data.
+The benchmark compares the performance of these two INSERT variants (which do the same thing with different inputs):
+```
+INSERT INTO sensors (sensorid, ts, value)
+VALUES 
+  ($1, $2, $3), 
+  ($4, $5, $6), 
+   ..., 
+  ($2998, $2999, $3000);
+```
+
+and
+
+```
+INSERT INTO sensors (ts, sensorid, value) 
+  SELECT * 
+  FROM unnest(
+    $1::timestamptz[], 
+    $2::text[], 
+    $3::float8[]
+)
+```
 
 The companion blog used a Timescale Cloud instance with 4CPU and 16GB memory.
 
