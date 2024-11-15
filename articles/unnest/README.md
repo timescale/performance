@@ -6,7 +6,7 @@ For a deeper dive into `INSERT .. UNNEST`  and the benchmark results, please ref
 
 ## Prerequisites
 
-To run this benchmark, you’ll need `pgbench` and a PostgreSQL database with the `pg_stat_statements` extension installed and created. 
+To run this benchmark, you’ll need `pgbench` and a PostgreSQL database with the `pg_stat_statements` extension installed, created, and `pg_stat_statements.track_planning = true` set (all this is automatic on Timescale Cloud). 
 
 ## Benchmark Overview
 
