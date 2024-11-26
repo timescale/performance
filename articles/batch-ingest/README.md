@@ -35,7 +35,7 @@ cargo build --release
 
 To execute the benchmark, use the following commands:
 
-```bash
+```
 export CONNECTION_STRING="postgres://database_to_test"
 unzip power_generation_1m.csv.zip
 pgingester --all --batch-sizes 1000,5000,10000,100000,1000000
