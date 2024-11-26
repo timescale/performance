@@ -2,12 +2,12 @@
 
 Hello, I'm James, a Developer Advocate at Timescale. Recently, I’ve been diving into performance topics, exploring the types of content I enjoy both reading and creating.
 
-This series is designed to highlight specific performance concepts in Timescale, TimescaleDB, and Postgres through detailed data visualizations. Expect no marketing fluff or unrealistic benchmarks, just clear, data-driven explorations of performance topics I find valuable and relevant.
+This series is designed to highlight specific performance concepts in Timescale, TimescaleDB, and Postgres through data visualizations. Expect no marketing fluff or unrealistic benchmarks, just clear, data-driven explorations of performance topics I find valuable and relevant.
 
 Each article's directory contains:
 - A link to the article
 - Steps for reproducing the benchmarks
-- A link to a PopSQL dashboard for interactive data exploration 
+- A link to the PopSQL dashboard (if there are graphs in the post).
 
 ## Published Articles
 
