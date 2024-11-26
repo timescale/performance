@@ -13,7 +13,7 @@ Each article's directory contains:
 
 1. [Postgres DISTINCT: TimescaleDB's Skip Scan Under Load](https://www.timescale.com/blog/skip-scan-under-load/), ([Github README](https://github.com/timescale/performance/blob/main/articles/skipscan/README.md))
 2. [Boosting Postgres INSERT Performance by 50% With UNNEST](https://www.timescale.com/blog/boosting-postgres-insert-performance/), ([Github README](https://github.com/timescale/performance/blob/main/articles/unnest/README.md))
-3. [Benchmarking PostgreSQL Batch Ingest]www.timescale.com/blog/benchmarking-postgresql-batch-ingest/), ([Github README](https://github.com/timescale/performance/blob/main/articles/batch-ingest/README.md))
+3. [Benchmarking PostgreSQL Batch Ingest](www.timescale.com/blog/benchmarking-postgresql-batch-ingest/), ([Github README](https://github.com/timescale/performance/blob/main/articles/batch-ingest/README.md))
 
 ## Performance Testing with Grafana k6
 
